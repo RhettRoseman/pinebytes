@@ -25,8 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* Nav always up  */}
-      <Navbar/>
+    
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

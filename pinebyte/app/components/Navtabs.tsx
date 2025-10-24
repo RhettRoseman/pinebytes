@@ -9,9 +9,9 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gray-900 text-white px-4 py-3 flex items-center justify-between relative">
+    <nav className="bg-green-900 text-white px-4 py-3 flex items-center justify-between relative">
       {/* Logo / Brand */}
-      <h1 className="text-xl font-bold">Pine Bytes</h1>
+      <h1 className="text-xl font-bold">PineByteDigital</h1>
 
       {/* Desktop links */}
       <div className="hidden md:flex space-x-6">
