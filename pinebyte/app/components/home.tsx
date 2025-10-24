@@ -23,7 +23,7 @@ export default function HomeComp(){
             href="/portfolio"
             className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition"
           >
-            View Our Work
+            View Our Examples
           </a>
         </div>
       </section>
