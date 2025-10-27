@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import LanguageMarquee from "./LanguageMarquee";
+import IconMarquee from "../components/icons/Languages"
 export default function HomeComp(){
     return(
           <main className="bg-gray-50 text-gray-900">
@@ -12,6 +13,9 @@ export default function HomeComp(){
         <p className="text-lg md:text-xl max-w-3xl mb-8 text-gray-700">
           PineByteDigital creates stunning websites and engaging video content that help financial advisors and small business owners attract more clients, establish credibility, and grow their practice online.
         </p>
+        <div>
+        <IconMarquee/>
+        </div>
         <div className="flex flex-col md:flex-row gap-4">
           <a
             href="/contact"
