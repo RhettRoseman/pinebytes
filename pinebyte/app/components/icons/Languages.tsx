@@ -147,29 +147,34 @@ export default function IconMarquee() {
   const repeatedIcons = Array(numberOfLoops).fill(icons).flat();
   
   return (
-    <div className="overflow-hidden w-full py-10">
-      <div className="flex animate-marquee gap-30 whitespace-nowrap">
-        {repeatedIcons.map((icon, idx) => (
-          <div
-            key={idx}
-            className="shrink-0 w-24 h-24 rounded-full flex items-center justify-center "
-          >
-            {icon}
-          </div>
-        ))}
+ <div className="overflow-hidden w-full py-10">
+  <div className="flex animate-marquee gap-16 whitespace-nowrap">
+    {[...repeatedIcons, ...repeatedIcons].map((icon, idx) => (
+      <div
+        key={idx}
+        className="shrink-0 w-24 h-24 rounded-full flex items-center justify-center"
+      >
+        {icon}
       </div>
+    ))}
+  </div>
 
-      <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          display: flex;
-          gap: 60px;
-          animation: marquee 100s linear infinite;
-        }
-      `}</style>
-    </div>
-  );
+  <style jsx>{`
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-marquee {
+      display: flex;
+      gap: 60px;
+      animation: marquee 140s linear infinite;
+    }
+  `}</style>
+</div>
+
+  )
 }
