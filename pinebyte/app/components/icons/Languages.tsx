@@ -170,8 +170,8 @@ export default function IconMarquee() {
     }
     .animate-marquee {
       display: flex;
-      gap: 60px;
-      animation: marquee 140s linear infinite;
+      gap: 120px;
+      animation: marquee 200s linear infinite;
     }
   `}</style>
 </div>

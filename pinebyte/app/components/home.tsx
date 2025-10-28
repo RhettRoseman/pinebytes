@@ -136,18 +136,11 @@ export default function HomeComp(){
       <article key={step} className="bg-white p-8 rounded-xl shadow-md">
         <div className="flex items-center gap-4 mb-4">
             {/* className  if else Function For Steps */}
-          <span
-            className={`text-4xl font-bold ${
-              step === 3 ? "text-purple-600" : "text-green-900" 
-            }` 
-            }
-          >
+          <span className={`text-4xl font-bold text-green-900`}>
             {step.toString().padStart(2, "0")}
           </span>
            <h3
-          className={`text-2xl font-semibold ${
-            step === 3 ? "text-purple-600" : "text-green-900"
-          }`}
+          className={`text-2xl font-semibold text-green-900`}
         >{title}</h3>
         </div>
         <p className="text-gray-600 ml-16">{description}</p>
