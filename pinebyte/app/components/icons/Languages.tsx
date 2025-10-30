@@ -78,7 +78,7 @@ interface IconMarqueeProps {
 export default function IconMarquee({ loopCount = 20, duration = 5 }: IconMarqueeProps) {
   // Duplicate the icons twice so the marquee loops seamlessly
   const marqueeItems = [...icons, ...icons];
-
+// if broken.....: cry
   return (
     <div className="overflow-hidden w-full py-10 relative">
       <div className="flex animate-marquee">
@@ -94,7 +94,9 @@ export default function IconMarquee({ loopCount = 20, duration = 5 }: IconMarque
           display: flex;
           gap: 64px;
           width: max-content;
-          animation: marquee 100s linear infinite;
+          //change speed here only nothing else changes speed. //if speed is lowered it will glitch DO NOT TOUCH
+          animation: marquee 100s linear infinite; 
+
         }
 
         @keyframes marquee {

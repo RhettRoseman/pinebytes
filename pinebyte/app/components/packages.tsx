@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function PackagesComp() {
   const packages = [
-    { name: "Starter Package", price: "$500", features: ["1-page website", "1 x 30-second video", "Strategy call", "7-day delivery"], highlight: false },
-    { name: "Growth Package", price: "$1,500", features: ["Full website", "1 x 1-minute video (more if discussed)", "Strategy call", "14-day delivery"], highlight: true },
-    { name: "Professional Package", price: "$2,500", features: ["Full website + blog", "2 x 1-minute videos", "Strategy call + implementation advice", "20-day delivery", "Booking System", "Extra revisions"], highlight: false },
-    { name: "Premium Package", price: "$4,000", features: ["Custom Website (More than 7 pages) and/or Custom App", "3 x 1-minute videos", "Comprehensive strategy session", "25+ day delivery", "Ongoing support (1 month)", "Extra revisions"], highlight: false },
+    { name: "Starter Package", price: "$500", features: ["1-page website", "1 x 30-second video", "Strategy call", "7-day delivery", "Ongoing support (1 month)"], highlight: false },
+    { name: "Growth Package", price: "$1,500", features: ["Full website", "1 x 1-minute video (more if discussed)", "Strategy call", "14-day delivery", "Ongoing support"], highlight: true },
+    { name: "Professional Package", price: "$2,500", features: ["Full website + blog", "2 x 1-minute videos", "Strategy call + implementation advice", "20-day delivery", "Booking System", "Extra revisions", "Ongoing support"], highlight: false },
+    { name: "Premium Package", price: "$4,000", features: ["Custom Website (More than 7 pages) and/or Custom App", "3 x 1-minute videos", "Comprehensive strategy session", "25+ day delivery", "Ongoing support", "Extra revisions"], highlight: false },
   ];
 
   return (

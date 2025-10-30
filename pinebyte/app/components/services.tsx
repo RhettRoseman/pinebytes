@@ -74,7 +74,11 @@ export default function ServiceComp() {
         ))}
       </section>
     {/* packages */}
-        <PackagesComp/>
+       {/* packages */}
+<section id="packages">
+  <PackagesComp />
+</section>
+
       {/* CTA Section */}
       <section className="py-24 text-center bg-green-900 text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">

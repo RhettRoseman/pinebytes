@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import LanguageMarquee from "./LanguageMarquee";
 import IconMarquee from "../components/icons/Languages"
 
 // Featured section class
@@ -94,7 +93,7 @@ export default function HomeComp(){
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <a
-            href="/contact"
+             href="/services#packages"
             className="px-8 py-4 bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition shadow-lg hover:shadow-xl"
           >
             Start Your Project
