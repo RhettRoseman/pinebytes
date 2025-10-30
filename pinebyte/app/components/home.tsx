@@ -89,7 +89,7 @@ export default function HomeComp(){
     At <span className="text-green-700">PineByteDigital</span> we create stunning websites and engaging video content that help independent financial advisors and small business owners attract more clients, establish credibility, and grow their practice online.
     </p>
   </div>
-        <div>
+        <div className="relative w-full overflow-hidden">
         <IconMarquee/>
         </div>
         <div className="flex flex-col md:flex-row gap-4">
@@ -135,7 +135,7 @@ export default function HomeComp(){
     {processes.map(({ step, title, description }) => (
       <article key={step} className="bg-white p-8 rounded-xl shadow-md">
         <div className="flex items-center gap-4 mb-4">
-            {/* className  if else Function For Steps */}
+           
           <span className={`text-4xl font-bold text-green-900`}>
             {step.toString().padStart(2, "0")}
           </span>

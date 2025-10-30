@@ -4,6 +4,7 @@ import './globals.css';
 
 // Import Google Fonts
 import { Inter, Montserrat } from "next/font/google";
+import Navbar from './components/Navtabs';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased bg-gray-50 text-gray-900`}
       >
+        <Navbar/>
        
         {children}
       </body>

@@ -4,7 +4,7 @@ import Navbar from '../components/Navtabs';
 export default function Services(){
     return(
         <>
-        <Navbar/>
+        
         <ServiceComp/>
         </>
     )
