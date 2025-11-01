@@ -5,6 +5,7 @@ import './globals.css';
 // Import Google Fonts
 import { Inter, Montserrat } from "next/font/google";
 import Navbar from './components/Navtabs';
+import Footer from './components/footer';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar/>
        
         {children}
+        <Footer/>
       </body>
     </html>
   );
