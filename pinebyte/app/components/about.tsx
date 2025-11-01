@@ -39,7 +39,15 @@ export default function AboutComp() {
   <h2 className="text-4xl font-bold text-green-900 mb-8 text-center">
     Experience & Approach
   </h2>
-
+<div className="flex justify-center items-center">
+  <Image 
+    src="/headshot.jpeg" 
+    alt="Your headshot" 
+    width={200} 
+    height={200} 
+    className="rounded-full"
+  />
+</div>
   {/* Core Experience Card */}
   <div className="max-w-3xl mx-auto p-8 bg-white rounded-2xl shadow-lg space-y-6 text-center text-gray-700">
     <p>
@@ -57,7 +65,7 @@ export default function AboutComp() {
   {/* Financial Advisor Background Card */}
   <div className="max-w-3xl mx-auto p-8 rounded-2xl shadow-lg space-y-6 text-center text-gray-700">
     <p className="text-lg font-semibold text-green-900">
-      As a second-generation financial advisor and the grandson of a blue-collar business owner, I understand the unique challenges independent advisors face.
+      As a second-generation financial advisor and the grandson of a blue-collar business owner, I understand the unique challenges independent advisors and small business owners face.
     </p>
     <p>
       From acquiring clients to navigating policy sales, the daily hurdles can be daunting. I’ve experienced them firsthand, and I know what works.

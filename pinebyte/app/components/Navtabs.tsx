@@ -11,7 +11,9 @@ export default function Navbar() {
   return (
     <nav className="bg-green-900 text-white px-4 py-3 flex items-center justify-between relative">
       {/* Logo / Brand */}
+      <Link href="/">
       <h1 className="text-xl font-bold">PineByteDigital</h1>
+      </Link>
 
       {/* Desktop links */}
       <div className="hidden md:flex space-x-6">
