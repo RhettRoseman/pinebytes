@@ -34,9 +34,7 @@ export default function TermComp ()  {
         We may update these Terms and Conditions from time to time. Any changes will be posted on this page, and continued use of the website constitutes acceptance of the updated terms.
       </p>
 
-      <p className="mt-8">
-        If you have any questions about these Terms, please contact us at <a href="mailto:info@pinebytedigital.com" className="text-green-600 underline">info@pinebytedigital.com</a>.
-      </p>
+  
     </main>
   );
 };
