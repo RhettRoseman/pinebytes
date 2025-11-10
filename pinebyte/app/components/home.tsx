@@ -93,13 +93,13 @@ export default function HomeComp(){
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <a
-             href="/services"
+             href="/services.html"
             className="px-8 py-4 bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition shadow-lg hover:shadow-xl"
           >
             Start Your Project
           </a>
           <a
-            href="/portfolio"
+            href="/portfolio.html"
             className="px-8 py-4   bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition"
           >
             View Our Examples
