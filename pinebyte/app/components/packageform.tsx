@@ -1,7 +1,7 @@
+// pages/packages.tsx
 "use client";
-import { useForm, ValidationError } from "@formspree/react";
-import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+
+import { useState, useEffect } from "react";
 
 interface FormData {
   selectedPackage: string;
@@ -10,39 +10,31 @@ interface FormData {
   phone: string;
 }
 
+const allPackages = [
+  "Starter Package",
+  "Growth Package",
+  "Professional Package",
+  "Premium Package",
+];
+
 export default function PackagesForm() {
-  const [state, handleSubmit] = useForm("mqagyrkw"); // <-- your Formspree ID
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const pkgFromQuery = searchParams.get("pkg") || "";
-
-  const allPackages = [
-    "Starter Package",
-    "Growth Package",
-    "Professional Package",
-    "Premium Package",
-  ];
-
   const [formData, setFormData] = useState<FormData>({
-    selectedPackage: pkgFromQuery,
+    selectedPackage: "",
     name: "",
     email: "",
     phone: "",
   });
 
+  // preselect package if ?pkg=... exists in URL
   useEffect(() => {
-    if (pkgFromQuery) {
-      setFormData((prev) => ({ ...prev, selectedPackage: pkgFromQuery }));
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const pkg = urlParams.get("pkg");
+      if (pkg && allPackages.includes(pkg)) {
+        setFormData((prev) => ({ ...prev, selectedPackage: pkg }));
+      }
     }
-  }, [pkgFromQuery]);
-
-  // ⏳ Redirect after successful submission
-  useEffect(() => {
-    if (state.succeeded) {
-      const timer = setTimeout(() => router.push("/contact"), 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [state.succeeded, router]);
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -50,22 +42,6 @@ export default function PackagesForm() {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
-  if (state.succeeded) {
-    return (
-      <main className="min-h-screen flex items-center justify-center bg-green-50">
-        <div className="bg-white p-10 rounded-3xl shadow-2xl text-center max-w-md w-full">
-          <h2 className="text-3xl font-bold text-green-900 mb-4">
-            Thanks for reaching out!
-          </h2>
-          <p className="text-gray-700">
-            I’ll give you a call soon to talk about your package choice.
-          </p>
-          <p className="text-sm text-gray-500 mt-4">Redirecting...</p>
-        </div>
-      </main>
-    );
-  }
 
   return (
     <main
@@ -84,7 +60,11 @@ export default function PackagesForm() {
           Pick a package, fill in your info, and I’ll reach out to get you started.
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form
+          action="https://formspree.io/f/mqagyrkw"
+          method="POST"
+          className="space-y-6"
+        >
           {/* Package */}
           <label className="block">
             <span className="font-semibold">Select Package</span>
@@ -105,11 +85,6 @@ export default function PackagesForm() {
               ))}
             </select>
           </label>
-          <input
-            type="hidden"
-            name="selectedPackage"
-            value={formData.selectedPackage}
-          />
 
           {/* Name */}
           <label className="block">
@@ -124,7 +99,6 @@ export default function PackagesForm() {
               required
             />
           </label>
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
 
           {/* Email */}
           <label className="block">
@@ -139,7 +113,6 @@ export default function PackagesForm() {
               required
             />
           </label>
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
 
           {/* Phone */}
           <label className="block">
@@ -154,21 +127,20 @@ export default function PackagesForm() {
               required
             />
           </label>
-          <ValidationError prefix="Phone" field="phone" errors={state.errors} />
 
           {/* Submit */}
           <button
             type="submit"
-            disabled={state.submitting}
             className="w-full bg-green-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
           >
-            {state.submitting ? "Sending..." : "Get Started"}
+            Get Started
           </button>
         </form>
       </div>
     </main>
   );
 }
+
 
 // Form goes to the email on this one 
 
