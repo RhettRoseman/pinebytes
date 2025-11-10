@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +12,14 @@ export default function Navbar() {
     <nav className="bg-green-900 text-white px-4 py-3 flex items-center justify-between relative">
       {/* Logo / Brand */}
       <Link href="/">
-      <h1 className="text-xl font-bold">PineByteDigital</h1>
+       <Image
+        src="/pinebytelogo.png"
+        alt="PineByte Digital Logo"
+        width={50}
+        height={50}
+        className="object-contain"
+        priority
+      />
       </Link>
 
       {/* Desktop links */}
