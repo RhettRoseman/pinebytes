@@ -92,18 +92,18 @@ export default function HomeComp(){
         <IconMarquee/>
         </div>
         <div className="flex flex-col md:flex-row gap-4">
-          <a
-             href="/services.html"
+          <Link
+             href="/services"
             className="px-8 py-4 bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition shadow-lg hover:shadow-xl"
           >
             Start Your Project
-          </a>
-          <a
-            href="/portfolio.html"
+          </Link>
+          <Link
+            href="/portfolio"
             className="px-8 py-4   bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition"
           >
             View Our Examples
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -158,12 +158,12 @@ export default function HomeComp(){
         <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
           Let's build something amazing together. Schedule a free consultation to discuss your project.
         </p>
-        <a
+        <Link
           href="/contact"
           className="inline-block px-10 py-4 bg-white text-green-600 font-semibold rounded-lg hover:bg-gray-100 transition shadow-xl hover:shadow-2xl"
         >
           Get Started Today
-        </a>
+        </Link>
       </section>
     </main>
     )
