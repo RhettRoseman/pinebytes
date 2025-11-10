@@ -5,6 +5,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface FormData {
   selectedPackage: string;
@@ -180,7 +181,8 @@ export default function PackagesForm() {
             type="submit"
             className="w-full bg-green-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
           >
-            Get Started
+            <Link href="/contact"> Get Started</Link>
+           
           </button>
         </form>
       </div>
