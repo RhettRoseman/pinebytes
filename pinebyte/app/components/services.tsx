@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PackagesComp from './packages';
 export default function ServiceComp() {
   const services = [
@@ -87,12 +88,12 @@ export default function ServiceComp() {
         <p className="text-lg mb-10 opacity-90">
           Let’s build something that looks good, works great, and earns trust.
         </p>
-        <a
+        <Link
           href="/contact"
           className="inline-block bg-white text-green-900 font-semibold px-10 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
         >
           Let’s Talk
-        </a>
+        </Link>
       </section>
     </main>
   );

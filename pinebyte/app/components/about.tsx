@@ -85,12 +85,12 @@ export default function AboutComp() {
         <p className="max-w-xl mx-auto mb-6 opacity-90">
           Whether you need a new website, video content, or a complete digital strategy, I’m here to help your business succeed.
         </p>
-        <a
+        <Link
           href="/contact"
           className="inline-block bg-white text-green-900 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition"
         >
           Schedule a Free Consultation
-        </a>
+        </Link>
       </section>
 
     </main>

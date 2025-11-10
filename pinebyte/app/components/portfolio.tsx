@@ -105,12 +105,12 @@ export default function PortfoliComp() {
                 <p className="text-lg mb-8">
                     Let’s build your online presence with the same care and clarity.
                 </p>
-                <a
+                <Link
                     href="/contact"
                     className="bg-white text-green-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100"
                 >
                     Start a Project
-                </a>
+                </Link>
             </section>
         </main>
     );
