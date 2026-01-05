@@ -8,24 +8,25 @@ interface Feature {
   description: string;
 }
 // Featured section Array
-const features : Feature[] = [
-{
-    title: "We Understand Your Industry",
-    description: "We know what builds credibility with your clients. Compliance-friendly, professional, and trustworthy design."
+const features: Feature[] = [
+  {
+    title: "We Know Video That Works",
+    description: "We understand what engages audiences and builds credibility. Every edit is polished, on-brand, and optimized for results."
   },
   {
     title: "Fast Turnaround",
-    description: "We respect your time. Get your website or video project delivered on schedule without compromising quality."
+    description: "Your time is valuable. Get short-form clips, long-form edits, or podcast content delivered on schedule without sacrificing quality."
   },
   {
     title: "Transparent Pricing",
-    description: "No hidden fees or surprise charges. Get clear packages with options that fit your budget and goals."
+    description: "No hidden fees. Know exactly what you’re paying for, whether it’s a monthly package or additional short- and long-form videos."
   },
   {
-    title: "Ongoing Support",
-    description: "We don't disappear after launch. Get updates, maintenance, and support as your business evolves."
+    title: "Ongoing Support & White-Label Delivery",
+    description: "We don’t just deliver files. We provide updates, revisions, and white-label options so your content is ready to post or resell."
   }
 ];
+
 // Feature Card Section 
 const FeatureCard: React.FC<Feature> = ({ title, description }) => (
   <div className="bg-white p-10 rounded-lg shadow-md  flex flex-col justify-center mt-1">
@@ -41,33 +42,32 @@ interface Process {
     description : string;
 }
 // Array For the Processes
-const processes : Process[] = [
-   {
+const processes: Process[] = [
+  {
     step: 1,
-    title: "Discovery Call",
+    title: "Content Intake & Planning",
     description:
-      "We learn about your business, target audience, and goals. This free consultation helps us understand exactly what you need.",
+      "We gather your footage, brand assets, and goals, then plan your content schedule based on your chosen package, whether it’s short-form only or includes long-form edits.",
   },
   {
     step: 2,
-    title: "Custom Proposal",
+    title: "Editing & Branding",
     description:
-      "We present a tailored plan with clear deliverables, timeline, and pricing options that fit your budget.",
+      "We create your short clips and long-form edits with captions, overlays, and branding elements included according to your package level.",
   },
   {
     step: 3,
-    title: "Build & Collaborate",
+    title: "Delivery & Review",
     description:
-      "We create your website or video with regular check-ins for your feedback, ensuring it perfectly matches your vision.",
+      "Your edits are delivered on a weekly or monthly schedule depending on your package, giving you time to review and request adjustments.",
   },
   {
     step: 4,
-    title: "Launch & Support",
+    title: "Finalization & Optimization",
     description:
-      "We launch your project and provide training and ongoing support to help you succeed.",
+      "We finalize your content, ensuring it’s polished, on-brand, and ready for posting. Higher-tier packages get priority turnaround, content planning, and white-label options.",
   },
 ];
-
 
 export default function HomeComp(){
     return(
@@ -75,23 +75,24 @@ export default function HomeComp(){
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-screen text-center p-2 "  
     style={{
-    backgroundImage: "url(/pexels-pixabay-39284.jpg)",
+    backgroundImage: "url(/biteofpine.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   }}>
-         <div className="bg-white bg-opacity-90 p-6 rounded-lg max-w-3xl">
-    <h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
-      Digital Solutions That Build Trust & Drive Growth
-    </h1>
-    <p className="text-lg md:text-l text-gray-700">
-    At <span className="text-green-700">PineByteDigital</span> we create stunning websites and engaging video content that help independent financial advisors and small business owners attract more clients, establish credibility, and grow their practice online.
-    </p>
-  </div>
-        <div className="relative w-full overflow-hidden">
+   <div className="bg-white bg-opacity-90 p-6 rounded-lg max-w-3xl">
+  <h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
+    Video Content That Engages, Converts & Grows Your Brand
+  </h1>
+  <p className="text-lg md:text-l text-gray-700">
+    At <span className="text-green-700">PineByteDigital</span>, we produce high-quality short-form clips, long-form edits, and podcast content that help independent financial advisors and small business owners capture attention, build credibility, and grow their audience — all while saving time and keeping your brand consistent.
+  </p>
+</div>
+
+        {/* <div className="relative w-full overflow-hidden">
         <IconMarquee/>
-        </div>
-        <div className="flex flex-col md:flex-row gap-4">
+        </div> */}
+        <div className="flex flex-col md:flex-row gap-4 m-10">
           <Link
              href="/services"
             className="px-8 py-4 bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition shadow-lg hover:shadow-xl"

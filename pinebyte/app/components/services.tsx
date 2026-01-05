@@ -1,32 +1,33 @@
 import Link from 'next/link';
 import PackagesComp from './packages';
 export default function ServiceComp() {
-  const services = [
-    {
-      title: "Website Design",
-      description:
-        "Custom, mobile-friendly sites built to convert visitors into clients — designed for speed, trust, and impact.",
-      icon: "💻",
-    },
-    {
-      title: "Video Production",
-      description:
-        "Professional videos that explain your story clearly, build credibility, and drive engagement across all platforms.",
-      icon: "🎥",
-    },
-    {
-      title: "Brand Identity",
-      description:
-        "Cohesive visuals, fonts, and colors that make your business instantly recognizable and build long-term trust.",
-      icon: "🎨",
-    },
-    {
-      title: "Ongoing Support",
-      description:
-        "We keep your digital assets updated, secure, and running smoothly so you can stay focused on your business.",
-      icon: "🧰",
-    },
-  ];
+ const services = [
+  {
+    title: "Short-Form Video Editing",
+    description:
+      "We craft high-quality short clips with captions, overlays, and branding to engage your audience and grow your presence.",
+    icon: "✂️",
+  },
+  {
+    title: "Long-Form & Podcast Editing",
+    description:
+      "We produce polished long-form videos or podcast clips, complete with graphics, transitions, and professional audio mixing.",
+    icon: "🎬",
+  },
+  {
+    title: "Content Planning & Strategy",
+    description:
+      "We help plan your video content schedule to maximize reach, engagement, and conversions across platforms.",
+    icon: "📅",
+  },
+  {
+    title: "White-Label & Agency Services",
+    description:
+      "Our edits can be delivered fully branded as your own, with priority turnaround and minimal client calls — perfect for agencies and resellers.",
+    icon: "🤝",
+  },
+];
+
 
   return (
     <main className="bg-gray-50 text-gray-900">

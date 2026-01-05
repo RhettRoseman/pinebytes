@@ -9,7 +9,14 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-green-900 text-white px-4 py-3 flex items-center justify-between relative">
+    <nav className="bg-green-900 text-white px-4 py-3 flex items-center justify-between relative"
+     style={{
+    backgroundImage: 'url("/")',              // make sure path is correct
+    backgroundSize: 'cover',                  // image covers whole nav area
+    backgroundPosition: 'center',      // center the image
+    backgroundRepeat: 'no-repeat',            // don’t repeat
+    backdropFilter: 'brightness(0.6)',        // darken for readability
+  }}>
       {/* Logo / Brand */}
       <Link href="/">
        <Image
