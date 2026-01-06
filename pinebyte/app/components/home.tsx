@@ -81,12 +81,12 @@ export default function HomeComp(){
     backgroundRepeat: "no-repeat",
   }}>
    <div className="bg-white bg-opacity-90 p-6 rounded-lg max-w-3xl">
-  <h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
-    Video Content That Engages, Converts & Grows Your Brand
-  </h1>
-  <p className="text-lg md:text-l text-gray-700">
-    At <span className="text-green-700">PineByteDigital</span>, we produce high-quality short-form clips, long-form edits, and podcast content that help independent financial advisors and small business owners capture attention, build credibility, and grow their audience — all while saving time and keeping your brand consistent.
-  </p>
+ <h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
+  Video Content That Engages, Converts & Grows Your Brand
+</h1>
+<p className="text-lg md:text-l text-gray-700">
+  At <span className="text-green-700">PineByteDigital</span>, we produce high-quality short-form clips, long-form edits, and podcast content that help businesses capture attention, build credibility, and grow their audience — all while saving time and keeping your brand consistent.
+</p>
 </div>
 
         {/* <div className="relative w-full overflow-hidden">

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PackagesComp from './packages';
+import OneOffPackage from './packageoneoff';
 export default function ServiceComp() {
  const services = [
   {
@@ -77,6 +78,9 @@ export default function ServiceComp() {
       </section>
     {/* packages */}
        {/* packages */}
+       <section id="oneoffpackage">
+  <OneOffPackage/>
+</section>
 <section id="packages">
   <PackagesComp />
 </section>

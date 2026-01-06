@@ -3,72 +3,83 @@ import Link from "next/link";
 export default function PackagesComp() {
 const packages = [
   {
-    name: "Short-Form Engine",
-    price: "$3,000/month",
+    name: "Starter",
+    price: "$1,500/month",
     features: [
-      "30 short clips per month",
+      "15 short-form videos per month",
       "Captions included",
       "Basic branding",
-      "Standard delivery schedule",
-      "No white-label",
+      "Standard turnaround",
+      "Best for getting consistent content out",
     ],
-    additional: {
-      shortFormUnder2Min: "$600 per extra short-form video",
-    },
     highlight: false,
   },
   {
     name: "Growth",
-    price: "$4,000/month",
+    price: "$3,000/month",
     features: [
-      "40 short clips + 1 long-form edit",
+      "25 short-form videos per month",
+      "1 long-form video (3–9 min) included",
       "Branding overlays",
       "Weekly delivery",
-      "White-label delivery included",
+      "Best value for serious growth",
     ],
-    additional: {
-      shortFormUnder2Min: "$600 per extra short-form video",
-      longFormOver3MinPlusShort: "$1,500 per extra long-form video + 1 short-form",
-    },
     highlight: true,
   },
   {
     name: "Authority",
-    price: "$5,000/month",
+    price: "$4,500/month",
     features: [
-      "50 short clips + 2 long-form edits / podcast clips",
-      "Content planning included",
+      "40 short-form videos per month",
+      "2 long-form videos included",
       "Priority turnaround",
-      "White-label delivery included",
+      "Content planning support",
+      "Built for creators & businesses scaling hard",
     ],
-    additional: {
-      shortFormUnder2Min: "$600 per extra short-form video",
-      longFormOver3MinPlusShort: "$1,500 per extra long-form video + 1 short-form",
-    },
     highlight: false,
   },
   {
-    name: "Agency White-Label",
+    name: "Webinar Pro",
     price: "$6,000/month",
     features: [
-      "80 short clips + 4 long-form edits",
-      "72-hour SLA",
-      "Minimal client calls",
-      "White-label delivery included",
+      "1–2 webinars per month",
+      "30 short clips from webinar content",
+      "Branding + captions included",
+      "Perfect for coaches, advisors, and educators",
     ],
-    additional: {
-      shortFormUnder2Min: "$600 per extra short-form video",
-      longFormOver3MinPlusShort: "$1,500 per extra long-form video + 1 short-form",
-    },
+    highlight: false,
+  },
+  {
+    name: "Webinar Authority",
+    price: "$8,000/month",
+    features: [
+      "3–4 webinars per month",
+      "30+ short clips included",
+      "Priority editing + branding",
+      "Built for teams producing heavy content",
+    ],
+    highlight: false,
+  },
+  {
+    name: "Custom",
+    price: "Let’s Talk",
+    features: [
+      "Tailored monthly plan",
+      "Custom volume of shorts & long-form",
+      "Flexible turnaround",
+      "White-label available",
+      "Built around your exact needs",
+    ],
     highlight: false,
   },
 ];
 
 
+
   return (
     <section className="py-20 px-8 bg-gray-50 text-gray-900">
       <h2 className="text-4xl font-bold text-center text-green-900 mb-12">
-        Our Packages
+        Monthly Packages
       </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
