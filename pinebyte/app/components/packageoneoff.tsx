@@ -27,33 +27,37 @@ const oneOffPackages = [
 
 export default function OneOffPackage() {
   return (
-    <section className="bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-green-900 text-center mb-12">
-          One-Off Editing Packages
-        </h1>
+<section className="bg-white py-20 px-6">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold text-green-900 text-center mb-12">
+      One-Off Editing Packages
+    </h2>
+    <p className="text-center text-gray-700 max-w-2xl mx-auto m-2">
+      Need a single video polished and ready to go? Each one-off project is fully branded with your logo and visuals, giving you professional, consistent content — no hassle, no stress, just results.
+    </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {oneOffPackages.map((pkg) => (
-            <div
-              key={pkg.name}
-              className="border border-green-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition"
-            >
-              <h2 className="text-xl font-semibold text-green-900 mb-2">
-                {pkg.name}
-              </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {oneOffPackages.map((pkg) => (
+        <div
+          key={pkg.name}
+          className="border border-green-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+        >
+          <h2 className="text-xl font-semibold text-green-900 mb-2">
+            {pkg.name}
+          </h2>
 
-              <div className="text-2xl font-bold text-black mb-4">
-                {pkg.price}
-              </div>
+          <div className="text-2xl font-bold text-black mb-4">
+            {pkg.price}
+          </div>
 
-              <p className="text-gray-700 leading-relaxed">
-                {pkg.description}
-              </p>
-            </div>
-          ))}
+          <p className="text-gray-700 leading-relaxed">
+            {pkg.description}
+          </p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 }

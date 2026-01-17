@@ -10,28 +10,29 @@ interface Feature {
 // Featured section Array
 const features: Feature[] = [
   {
-    title: "We Know Video That Works",
-    description: "We understand what engages audiences and builds credibility. Every edit is polished, on-brand, and optimized for results."
+    title: "🎯 Video That Actually Converts",
+    description: "We don’t just edit clips—we craft content designed to capture attention, build trust with your audience, and drive real engagement for your business."
   },
   {
-    title: "Fast Turnaround",
-    description: "Your time is valuable. Get short-form clips, long-form edits, or podcast content delivered on schedule without sacrificing quality."
+    title: "⚡ Lightning-Fast Turnaround",
+    description: "Need content ready on schedule? Short-form clips, long-form edits, or podcast episodes delivered reliably so you never miss a posting deadline."
   },
   {
-    title: "Transparent Pricing",
-    description: "No hidden fees. Know exactly what you’re paying for, whether it’s a monthly package or additional short- and long-form videos."
+    title: "💵 Straightforward, Honest Pricing",
+    description: "No surprise fees, no hidden costs. You know exactly what you’re paying for—whether it’s a monthly package or extra edits—and every dollar goes toward results."
   },
   {
-    title: "Ongoing Support & White-Label Delivery",
-    description: "We don’t just deliver files. We provide updates, revisions, and white-label options so your content is ready to post or resell."
+    title: "🤝 Support That Actually Helps",
+    description: "We don’t just drop files and disappear. Get revisions, updates, and white-label options so every video is polished, branded, and ready to post—or resell—without headaches."
   }
 ];
+
 
 // Feature Card Section 
 const FeatureCard: React.FC<Feature> = ({ title, description }) => (
   <div className="bg-white p-10 rounded-lg shadow-md  flex flex-col justify-center mt-1">
-    <h3 className="text-xl font-semibold text-green-900">{title}</h3>
-    <p className="text-gray-600 text-sm ">{description}</p>
+    <h3 className="text-xl font-semibold text-green-900 m-5">{title}</h3>
+    <p className="text-gray-600 text-sm mr-2 ml-2 justify">{description}</p>
   </div>
 );
 ///////////////////////////////////////////////////////////
@@ -45,29 +46,30 @@ interface Process {
 const processes: Process[] = [
   {
     step: 1,
-    title: "Content Intake & Planning",
+    title: "Onboarding & Content Planning",
     description:
-      "We gather your footage, brand assets, and goals, then plan your content schedule based on your chosen package, whether it’s short-form only or includes long-form edits.",
+      "We kick things off with a quick onboarding session to understand your brand, goals, and content needs. We gather your footage, logos, and brand assets, then map out a content schedule tailored to your package—short-form, long-form, or both.",
   },
   {
     step: 2,
     title: "Editing & Branding",
     description:
-      "We create your short clips and long-form edits with captions, overlays, and branding elements included according to your package level.",
+      "Our team transforms your footage into polished short clips or long-form videos, adding captions, overlays, and branding elements. Everything is aligned with your style and goals, so your content looks professional and cohesive.",
   },
   {
     step: 3,
-    title: "Delivery & Review",
+    title: "Delivery & Feedback",
     description:
-      "Your edits are delivered on a weekly or monthly schedule depending on your package, giving you time to review and request adjustments.",
+      "We deliver your videos on your preferred schedule—weekly or monthly—so you have time to review them. You can request revisions or adjustments to make sure every video hits the mark.",
   },
   {
     step: 4,
     title: "Finalization & Optimization",
     description:
-      "We finalize your content, ensuring it’s polished, on-brand, and ready for posting. Higher-tier packages get priority turnaround, content planning, and white-label options.",
+      "After feedback, we finalize your content and make any last improvements to ensure it’s ready to post. Higher-tier packages also get priority turnaround, content planning support, and white-label delivery options.",
   },
 ];
+
 
 export default function HomeComp(){
     return(
@@ -81,12 +83,16 @@ export default function HomeComp(){
     backgroundRepeat: "no-repeat",
   }}>
    <div className="bg-white bg-opacity-90 p-6 rounded-lg max-w-3xl">
- <h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
+<h1 className="text-3xl lg:text-6xl md:text-3xl sm:text-2xl font-bold mb-6 text-green-900">
   Video Content That Engages, Converts & Grows Your Brand
 </h1>
 <p className="text-lg md:text-l text-gray-700">
-  At <span className="text-green-700">PineByteDigital</span>, we produce high-quality short-form clips, long-form edits, and podcast content that help businesses capture attention, build credibility, and grow their audience — all while saving time and keeping your brand consistent.
+  At <span className="text-green-700">PineByteDigital</span>, we create short-form clips, long-form edits, and podcast content that help your business get noticed, build trust, and grow your audience.  
 </p>
+<p className="text-lg md:text-l text-gray-700">
+  Whether you just need a single video or a long-term content partner, we’re here to make the process easy. We handle the editing, branding, and polish so your videos look professional and consistent—without taking up your time.
+</p>
+
 </div>
 
         {/* <div className="relative w-full overflow-hidden">
@@ -99,12 +105,12 @@ export default function HomeComp(){
           >
             Start Your Project
           </Link>
-          <Link
+          {/* <Link
             href="/portfolio"
             className="px-8 py-4   bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition"
           >
             View Our Examples
-          </Link>
+          </Link> */}
         </div>
       </section>
 

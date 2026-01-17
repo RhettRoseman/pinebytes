@@ -1,62 +1,41 @@
 import Link from "next/link";
 
 export default function PackagesComp() {
+  
 const packages = [
   {
     name: "Starter",
-    price: "$1,500/month",
+    price: "$500/month",
     features: [
-      "15 short-form videos per month",
+      "8 short-form videos per month",
       "Captions included",
       "Basic branding",
       "Standard turnaround",
-      "Best for getting consistent content out",
+      "Perfect for getting started with video",
     ],
     highlight: false,
   },
   {
     name: "Growth",
-    price: "$3,000/month",
+    price: "$750/month",
     features: [
-      "25 short-form videos per month",
-      "1 long-form video (3–9 min) included",
+      "15 short-form videos per month",
+      "1 long-form video included",
       "Branding overlays",
       "Weekly delivery",
-      "Best value for serious growth",
+      "Best value for early growth",
     ],
     highlight: true,
   },
   {
-    name: "Authority",
-    price: "$4,500/month",
+    name: "Pro",
+    price: "$1,500/month",
     features: [
-      "40 short-form videos per month",
+      "25 short-form videos per month",
       "2 long-form videos included",
       "Priority turnaround",
-      "Content planning support",
-      "Built for creators & businesses scaling hard",
-    ],
-    highlight: false,
-  },
-  {
-    name: "Webinar Pro",
-    price: "$6,000/month",
-    features: [
-      "1–2 webinars per month",
-      "30 short clips from webinar content",
-      "Branding + captions included",
-      "Perfect for coaches, advisors, and educators",
-    ],
-    highlight: false,
-  },
-  {
-    name: "Webinar Authority",
-    price: "$8,000/month",
-    features: [
-      "3–4 webinars per month",
-      "30+ short clips included",
-      "Priority editing + branding",
-      "Built for teams producing heavy content",
+      "Light content planning support",
+      "Built for businesses ready to scale",
     ],
     highlight: false,
   },
@@ -76,13 +55,21 @@ const packages = [
 
 
 
+
   return (
     <section className="py-20 px-8 bg-gray-50 text-gray-900">
-      <h2 className="text-4xl font-bold text-center text-green-900 mb-12">
+      <div>
+        <h2 className="text-4xl font-bold text-center text-green-900 mb-12">
         Monthly Packages
       </h2>
+       <p className="text-center text-gray-700 max-w-2xl mx-auto">
+    Every video comes fully branded with your logo and personalized visuals.  
+    We handle the editing so your content looks professional, consistent, and ready to post every month.
+  </p>
+      </div>
+      
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 m-2">
         {packages.map((pkg, index) => (
           <Link
             key={index}
@@ -108,7 +95,7 @@ const packages = [
             </div>
 
             <div className="mb-4 text-gray-600 text-sm text-center">
-              Website Hosting starting at $35/month
+            OnBoarding Fee Included in Packages 
             </div>
 
             <div className="mt-auto flex justify-center">

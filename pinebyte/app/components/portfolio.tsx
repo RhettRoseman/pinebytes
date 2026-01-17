@@ -1,115 +1,81 @@
 import Link from "next/link";
 
-export const metadata = {
-    title: "Henry Joseph Financial | Pinebyte Digital Portfolio",
-    description:
-        "A modern financial firm website built by Pinebyte Digital using Next.js and Tailwind CSS. Designed to inspire trust and clarity for blue-collar business owners.",
-};
-
 export default function PortfoliComp() {
     return (
         <main>
             {/* Hero Section */}
-            <section className="bg-white py-20">
-                <div className="max-w-6xl mx-auto text-center px-6">
-                    <h1 className="text-5xl font-bold text-green-900 mb-4">
-                        Henry Joseph Financial
-                    </h1>
-                    <p className="text-gray-600 text-lg">
-                        A modern financial firm website built with Next.js, Tailwind CSS,
-                        and a focus on clarity and trust.
-                    </p>
-                    <div className="mt-8">
-                        <img
-                            src="/hjweb.gif"
-                            alt="Henry Joseph Financial Website"
-                            className="rounded-2xl shadow-lg mx-auto"
-                        />
-                    </div>
-                    <Link href="https://www.henryjosephfinancial.com">
-                        <button className="bg-green-900 text-white font-bold py-3 px-6 m-5 rounded-lg hover:bg-green-700 transition-colors">
-                            Look at the Live Version!
-                        </button>
-                    </Link>
-                </div>
-            </section>
+           <section
+  className="bg-white py-20"
+  style={{
+    backgroundImage: "url('/camerasondesk.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="max-w-6xl mx-auto text-center px-6 bg-white bg-opacity-80 p-8 rounded-lg">
+    <h1 className="text-5xl font-bold text-green-900 mb-4">
+      Branded Videos That Grow Your Business 🎬
+    </h1>
+    <p className="text-gray-600 text-lg mb-6">
+      We produce <span className="font-bold">short-form clips, long-form edits, and intro videos</span> for financial advisors and small business owners — polished, professional, and ready to engage your audience.
+    </p>
+    <p className="text-gray-600 text-lg mb-6">
+      Whether you just need a single video or a consistent monthly flow of content, we handle the editing, branding, and polish so your content looks professional and consistent—without eating up your time.
+    </p>
+    <Link
+      href="/contact"
+      className="bg-green-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition"
+    >
+      Start Your Project
+    </Link>
+  </div>
+</section>
 
-            {/* About Section */}
-            <section className="bg-gray-50 py-16">
-                <div className="max-w-5xl mx-auto px-6">
-                    <h2 className="text-3xl font-semibold text-green-900 mb-4">
-                        About the Project
-                    </h2>
-                    <p className="text-gray-700 leading-relaxed">
-                        I created Henry Joseph Financial with a digital first presence that reflected integrity and connection to blue-collar business owners. I
-                        built a site that communicates trust through clean design, simple
-                        navigation, and a warm tone. Designed for my own financial firm.
-                    </p>
-                </div>
-            </section>
 
-            {/* Process Section */}
-            <section className="bg-white py-16">
-                <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 className="text-xl font-semibold text-green-900 mb-2">
-                            Planning
-                        </h3>
+            {/* Features Section */}
+            <section className="bg-gray-50 py-20 px-6">
+                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div className="bg-white p-10 rounded-lg shadow-md flex flex-col justify-center">
+                        <h3 className="text-xl font-semibold text-green-900 mb-2">🎯 Professional Branding</h3>
                         <p className="text-gray-700">
-                            Researched financial firm sites, created wireframes focusing on
-                            clarity and call-to-action placement, did calls with target market to make sure I was putting in the right problem-solution.
+                            Every video includes your logo, colors, and visual style, giving your brand a consistent and polished look across all platforms.
                         </p>
                     </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-green-900 mb-2">
-                            Design & Branding
-                        </h3>
+                    <div className="bg-white p-10 rounded-lg shadow-md flex flex-col justify-center">
+                        <h3 className="text-xl font-semibold text-green-900 mb-2">⏱ Fast Turnaround</h3>
                         <p className="text-gray-700">
-                            Implemented a design using neutral tones and deep blues, paired with strong typography to reflect the firm’s personality. Carefully selected high-quality stock photos were used, focusing solely on the target audience and the narratives we wanted to communicate.
+                            We handle the editing and deliver videos on schedule, so you never have to worry about missing deadlines or posting late.
                         </p>
                     </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-green-900 mb-2">
-                            Development
-                        </h3>
+                    <div className="bg-white p-10 rounded-lg shadow-md flex flex-col justify-center">
+                        <h3 className="text-xl font-semibold text-green-900 mb-2">💡 Custom Content</h3>
                         <p className="text-gray-700">
-                            Built in Next.js with Tailwind CSS for performance and
-                            flexibility. Optimized SEO and responsive layouts.
+                            From quick social clips to long-form webinars or intros, we create content tailored to your audience and goals.
                         </p>
                     </div>
-                </div>
-            </section>
-
-            {/* Results Section */}
-            <section className="bg-gray-50 py-16">
-                <div className="max-w-5xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl font-semibold text-green-900 mb-6">
-                        The Results
-                    </h2>
-                    <ul className="text-gray-700 space-y-3">
-                        <li>
-                            ⚡️ <strong>100%</strong> mobile responsiveness across all devices
-                        </li>
-                        <li>🔍 SEO-optimized metadata for higher local visibility</li>
-                        <li>💬 Clear client journey — from homepage to contact form</li>
-                        <li>🎨 Consistent brand language built around trust & clarity</li>
-                    </ul>
+                    <div className="bg-white p-10 rounded-lg shadow-md flex flex-col justify-center">
+                        <h3 className="text-xl font-semibold text-green-900 mb-2">🤝 Easy Collaboration</h3>
+                        <p className="text-gray-700">
+                            Onboarding is simple. Send us your footage or ideas, and we handle the rest — edits, captions, graphics, and branding included.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* CTA Section */}
             <section className="bg-green-900 py-20 text-center text-white">
                 <h2 className="text-4xl font-semibold mb-4">
-                    Need a website that builds trust?
+                    Ready to Elevate Your Content?
                 </h2>
                 <p className="text-lg mb-8">
-                    Let’s build your online presence with the same care and clarity.
+                    Let’s create videos that save you time, build your brand, and engage your audience. Start today!
                 </p>
                 <Link
                     href="/contact"
-                    className="bg-white text-green-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100"
+                    className="bg-white text-green-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100"
                 >
-                    Start a Project
+                    Start Your Project
                 </Link>
             </section>
         </main>
