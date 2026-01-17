@@ -100,7 +100,7 @@ export default function HomeComp(){
         </div> */}
         <div className="flex flex-col md:flex-row gap-4 m-10">
           <Link
-             href="/services"
+             href="/contact"
             className="px-8 py-4 bg-green-900 text-white rounded-lg hover:bg-green-600 hover:border-2 transition shadow-lg hover:shadow-xl"
           >
             Start Your Project
