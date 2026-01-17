@@ -20,7 +20,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" onClick={() => setIsOpen(false)}>
         <Image
-          src="/pinebytelogo.jpg"
+          src="/pinebytelogo.png"
           alt="PineByte Digital Logo"
           width={50}
           height={50}
