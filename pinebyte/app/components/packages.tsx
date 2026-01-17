@@ -72,9 +72,7 @@ const packages = [
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 m-2">
         {packages.map((pkg, index) => (
           <Link
-            key={index}
-            href={`/packages?pkg=${encodeURIComponent(pkg.name)}`}
-            className="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between hover:border-green-700 hover:border-4 transition transform"
+           href='/contact'
           >
             {pkg.highlight && (
               <div className="mt-4 text-sm font-semibold text-green-800 bg-green-50 inline-block px-3 py-1 rounded-full">
