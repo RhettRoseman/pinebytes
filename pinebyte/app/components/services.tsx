@@ -1,61 +1,62 @@
 import Link from 'next/link';
 import PackagesComp from './packages';
 import OneOffPackage from './packageoneoff';
+import WorkflowComp from './workflow';
 export default function ServiceComp() {
- const services = [
-  {
-    title: "Short-Form Video Editing",
-    description:
-      "We craft high-quality short clips with captions, overlays, and branding to engage your audience and grow your presence.",
-    icon: "✂️",
-  },
-  {
-    title: "Long-Form & Podcast Editing",
-    description:
-      "We produce polished long-form videos or podcast clips, complete with graphics, transitions, and professional audio mixing.",
-    icon: "🎬",
-  },
-  {
-    title: "Content Planning & Strategy",
-    description:
-      "We help plan your video content schedule to maximize reach, engagement, and conversions across platforms.",
-    icon: "📅",
-  },
-  {
-    title: "White-Label & Agency Services",
-    description:
-      "Our edits can be delivered fully branded as your own, with priority turnaround and minimal client calls — perfect for agencies and resellers.",
-    icon: "🤝",
-  },
-];
+  const services = [
+    {
+      title: "Short-Form Video Editing",
+      description:
+        "We craft high-quality short clips with captions, overlays, and branding to engage your audience and grow your presence.",
+      icon: "✂️",
+    },
+    {
+      title: "Long-Form & Podcast Editing",
+      description:
+        "We produce polished long-form videos or podcast clips, complete with graphics, transitions, and professional audio mixing.",
+      icon: "🎬",
+    },
+    {
+      title: "Content Planning & Strategy",
+      description:
+        "We help plan your video content schedule to maximize reach, engagement, and conversions across platforms.",
+      icon: "📅",
+    },
+    {
+      title: "White-Label & Agency Services",
+      description:
+        "Our edits can be delivered fully branded as your own, with priority turnaround and minimal client calls — perfect for agencies and resellers.",
+      icon: "🤝",
+    },
+  ];
 
 
   return (
     <main className="bg-gray-50 text-gray-900">
       {/* Header Section */}
-   <section
-  className="text-center relative min-h-screen flex flex-col justify-center  text-green-900"
-  style={{
-    backgroundImage: "url(/laptop-camera-desk.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-  {/* Gradient overlay */}
-  <div className="absolute inset-0 bg-linear-to-b"></div>
+      <section
+        className="text-center relative min-h-screen flex flex-col justify-center  text-green-900"
+        style={{
+          backgroundImage: "url(/pexels-fukajaz-32774292.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-linear-to-b"></div>
 
-  {/* Content */}
-  <div className="relative z-10 max-w-3xl mx-auto px-6 bg-white rounded-2xl">
-    <h1 className="text-5xl lg:text-6xl md:text-5xl sm:text-3xl font-bold mb-6 leading-tight">
-      Our Services
-    </h1>
-    <p className="text-lg md:text-xl opacity-90">
-      Digital solutions that help you look professional, attract more clients,
-      and grow your business with confidence.
-    </p>
-  </div>
-</section>
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl mx-auto px-6 bg-white rounded-2xl">
+          <h1 className="text-5xl lg:text-6xl md:text-5xl sm:text-3xl font-bold mb-6 leading-tight">
+            Our Services
+          </h1>
+          <p className="text-lg md:text-xl opacity-90">
+            Digital solutions that help you look professional, attract more clients,
+            and grow your business with confidence.
+          </p>
+        </div>
+      </section>
 
 
 
@@ -76,14 +77,18 @@ export default function ServiceComp() {
           </div>
         ))}
       </section>
-    {/* packages */}
-       {/* packages */}
-       <section id="oneoffpackage">
-  <OneOffPackage/>
-</section>
-<section id="packages">
-  <PackagesComp />
-</section>
+      {/* How it works */}
+
+      <section>
+        <WorkflowComp/>
+      </section>
+      {/* packages */}
+      <section id="oneoffpackage">
+        <OneOffPackage />
+      </section>
+      <section id="packages">
+        <PackagesComp />
+      </section>
 
       {/* CTA Section */}
       <section className="py-24 text-center bg-green-900 text-white">
